@@ -13,9 +13,8 @@ schemaS = () => {
     estado_info: Joi.object().keys({
       area_km2: Joi.string().required(),
       codigo_ibge: Joi.number().required(),
-      nome: Joi.string().required()
+      nome: Joi.string().required(),
     }),
-    logadouro: Joi.string()
   })
   return schema
 }
